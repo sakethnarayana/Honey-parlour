@@ -1,0 +1,152 @@
+/* ==========================================================================
+   Base / reset
+   ========================================================================== */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) - 1px);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--ink);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: var(--fs-base);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body.no-scroll { overflow: hidden; }
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--ivory);
+  letter-spacing: 0.005em;
+}
+
+p { margin: 0 0 1em; }
+p:last-child { margin-bottom: 0; }
+
+a { color: inherit; text-decoration: none; }
+
+img, svg { display: block; max-width: 100%; }
+img { height: auto; }
+
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; background: none; border: 0; padding: 0; }
+
+ul { margin: 0; padding: 0; list-style: none; }
+
+em { font-style: italic; }
+
+::selection { background: var(--rose-deep); color: var(--ivory); }
+
+:focus-visible {
+  outline: 1.5px solid var(--gold-light);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.icon { width: 1.15em; height: 1.15em; flex: none; }
+
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 1rem;
+  z-index: 200;
+  padding: 0.6rem 1rem;
+  background: var(--gold);
+  color: var(--ink);
+  font-weight: 500;
+}
+.skip-link:focus { top: 1rem; }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.noscript {
+  padding: 1rem;
+  text-align: center;
+  background: var(--burgundy-800);
+}
+
+/* Data is injected after load — fade the page in once ready */
+body.is-loading main,
+body.is-loading .site-footer { opacity: 0; }
+main, .site-footer { transition: opacity 0.6s var(--ease); }
+
+/* Load-in animation for hero pieces */
+.anim-in {
+  opacity: 0;
+  transform: translateY(18px);
+}
+body.is-ready .anim-in {
+  animation: rise 1.1s var(--ease-out) forwards;
+  animation-delay: var(--d, 0s);
+}
+@keyframes rise { to { opacity: 1; transform: none; } }
+
+/* Scroll reveal */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity var(--t-slow) var(--ease-out), transform var(--t-slow) var(--ease-out);
+}
+[data-reveal].is-visible { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .anim-in, [data-reveal] { opacity: 1; transform: none; }
+}
+
+/* ==========================================================================
+   Telugu typography
+   Telugu letters join into clusters, so letter-spacing and capitalisation
+   (used for the small Latin labels) must be switched off, and the script
+   needs extra line height for its vowel signs.
+   ========================================================================== */
+html:lang(te) body { line-height: 1.85; }
+/* (The hero title is the English brand name, so it keeps its own spacing.) */
+html:lang(te) :is(h2, h3, h4, .section-title, .service-name, .service-group-title, .modal-title) { line-height: 1.4; }
+html:lang(te) :is(
+  .eyebrow, .nav-link, .btn, .chip, .service-cat, .service-group-count, .badge, .price small,
+  .link-arrow, .field label, .contact-label, .contact-row dt, .footer-col h4, .stat-label,
+  .hero-card-label, .action-btn
+) {
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+/* Small labels need a little more size to stay legible in Telugu */
+html:lang(te) :is(.eyebrow, .service-cat, .contact-label, .contact-row dt, .footer-col h4, .stat-label, .hero-card-label, .service-popular, .field label) { font-size: 1rem; }
+html:lang(te) :is(.contact-row dd .muted, .form-footnote, .services-note, .field-error) { font-size: 0.98rem; }
+html:lang(te) .book-btn { font-size: 1rem; }
+html:lang(te) .btn { font-size: 0.95rem; }
+html:lang(te) .hero-intro, html:lang(te) .section-intro { font-size: 1.05rem; }
+/* Long Telugu headings: italics read poorly, keep the accent colour only */
+html:lang(te) :is(.section-title em, .modal-title em, .service-group-title) { font-style: normal; }
+html:lang(te) .chip { font-size: 0.95rem; }
+html:lang(te) .service-group-count { font-size: 0.9rem; }
+@media (min-width: 961px) {
+  html:lang(te) .nav-link { font-size: 1.02rem; }
+  html:lang(te) .btn-sm { font-size: 0.95rem; }
+}

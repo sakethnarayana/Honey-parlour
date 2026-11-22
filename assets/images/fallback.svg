@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0" stop-color="#4a1a2c"/>
+      <stop offset="0.55" stop-color="#2a0f1a"/>
+      <stop offset="1" stop-color="#120709"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3dfa2"/>
+      <stop offset="0.5" stop-color="#c9a45c"/>
+      <stop offset="1" stop-color="#8a6a2f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <g fill="none" stroke="url(#gold)" stroke-width="2" opacity="0.85" transform="translate(600 430)">
+    <circle r="92"/>
+    <circle r="104" opacity="0.4"/>
+    <g opacity="0.7">
+      <path d="M0-60 C22-38 22-14 0 0 C-22-14 -22-38 0-60Z"/>
+      <path d="M0-60 C22-38 22-14 0 0 C-22-14 -22-38 0-60Z" transform="rotate(72)"/>
+      <path d="M0-60 C22-38 22-14 0 0 C-22-14 -22-38 0-60Z" transform="rotate(144)"/>
+      <path d="M0-60 C22-38 22-14 0 0 C-22-14 -22-38 0-60Z" transform="rotate(216)"/>
+      <path d="M0-60 C22-38 22-14 0 0 C-22-14 -22-38 0-60Z" transform="rotate(288)"/>
+    </g>
+  </g>
+  <text x="600" y="610" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-style="italic" fill="#f3dfa2" opacity="0.9">Honey</text>
+  <text x="600" y="650" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" letter-spacing="7" fill="#e8a0b4" opacity="0.75">BEAUTY PARLOUR</text>
+</svg>

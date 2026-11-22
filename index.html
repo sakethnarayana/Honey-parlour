@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Beauty Parlour</title>
+  <meta name="description" content="">
+  <meta name="theme-color" content="#1a0a10">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://images.pexels.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Noto+Sans+Telugu:wght@400;500;600&family=Tiro+Telugu:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="src/css/variables.css">
+  <link rel="stylesheet" href="src/css/base.css">
+  <link rel="stylesheet" href="src/css/layout.css">
+  <link rel="stylesheet" href="src/css/components.css">
+  <link rel="stylesheet" href="src/css/sections.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
+
+  <script type="module" src="src/js/main.js"></script>
+</head>
+<body class="is-loading">
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="gold-grad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#f3dfa2"/><stop offset=".5" stop-color="#c9a45c"/><stop offset="1" stop-color="#8a6a2f"/>
+      </linearGradient>
+    </defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M5 4h3.2l1.6 4-2 1.3a11 11 0 0 0 6.9 6.9l1.3-2 4 1.6V19a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.1-1.3A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3 .8.8-2.95-.2-.3a8.2 8.2 0 1 1 6.9 3.78Zm4.5-6.15c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.55.12-.17.25-.64.8-.78.96-.14.17-.29.19-.53.06a6.7 6.7 0 0 1-3.37-2.94c-.25-.44.25-.41.72-1.36.08-.17.04-.31-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.65.3 2.74 2.74 0 0 0-.85 2.03 4.76 4.76 0 0 0 1 2.53 10.9 10.9 0 0 0 4.18 3.7c1.56.67 2.17.73 2.95.61.47-.07 1.46-.6 1.66-1.17.2-.58.2-1.07.15-1.17-.06-.1-.22-.17-.47-.29Z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r=".9" fill="currentColor" stroke="none"/></g></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" d="M14 8h3V4.5h-3a4 4 0 0 0-4 4V11H7v3.5h3V21h3.5v-6.5h3l.5-3.5h-3.5V8.8c0-.5.3-.8.5-.8Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-6.1 7-11.5a7 7 0 1 0-14 0C5 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g></symbol>
+    <symbol id="i-diamond" viewBox="0 0 12 12"><path fill="currentColor" d="M6 0 12 6 6 12 0 6Z"/></symbol>
+    <!-- Decorative flourish used as a section divider -->
+    <symbol id="i-flourish" viewBox="0 0 220 24">
+      <g fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+        <path d="M0 12h80M140 12h80"/>
+        <path d="M80 12c8-8 18-8 24 0M140 12c-8-8-18-8-24 0" opacity=".7"/>
+        <path d="M110 3c4 4 4 14 0 18-4-4-4-14 0-18Z"/>
+      </g>
+      <circle cx="110" cy="12" r="1.6" fill="currentColor"/>
+      <circle cx="86" cy="12" r="1.2" fill="currentColor"/><circle cx="134" cy="12" r="1.2" fill="currentColor"/>
+    </symbol>
+    <!-- Fine-line floral sprig -->
+    <symbol id="i-floral" viewBox="0 0 120 160">
+      <g fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+        <path d="M60 160C58 120 62 80 60 40"/>
+        <path d="M60 40c-12-6-16-20-6-30 10 6 12 20 6 30Zm0 0c12-6 16-20 6-30-10 6-12 20-6 30Z"/>
+        <path d="M60 40c-6-14 0-30 0-38 0 8 6 24 0 38Z"/>
+        <path d="M60 96c-14-2-28-12-32-28 16 0 28 10 32 28Zm0-22c14-2 26-12 30-26-16 0-26 10-30 26Z"/>
+        <path d="M60 130c-10-4-18-14-18-24 10 2 18 12 18 24Zm0-6c10-4 16-12 16-22-10 2-16 10-16 22Z" opacity=".7"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- ============ Header / navigation ============ -->
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#home" data-brand aria-label="Home"></a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-i18n-aria="nav.main" data-nav>
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link" data-i18n="nav.home">Home</a></li>
+          <li><a href="#services" class="nav-link" data-i18n="nav.services">Services &amp; Prices</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="nav-mobile-extra">
+          <button type="button" class="btn btn-gold btn-block" data-open-booking>
+            <svg class="icon"><use href="#i-calendar"/></svg> <span data-i18n="cta.book">Book Appointment</span>
+          </button>
+          <div class="nav-mobile-contact" data-nav-contact></div>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="lang-toggle" data-lang-toggle data-i18n-aria="lang.switchAria" lang="te" aria-label="తెలుగులో చూడండి — View in Telugu" data-i18n="lang.switchTo">తెలుగు</button>
+        <button type="button" class="btn btn-gold btn-sm header-cta" data-open-booking data-i18n="cta.book">Book Appointment</button>
+        <button type="button" class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu" data-i18n-aria="menu.open" data-nav-toggle>
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ Hero ============ -->
+    <section id="home" class="hero" aria-label="Introduction">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <svg class="hero-floral" aria-hidden="true"><use href="#i-floral"/></svg>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow anim-in" style="--d:.1s"><span class="eyebrow-line"></span><span data-setting="heroEyebrow"></span></p>
+          <h1 class="hero-title anim-in" style="--d:.2s" data-hero-title></h1>
+          <p class="hero-tagline anim-in" style="--d:.35s"><span data-setting="tagline"></span></p>
+          <p class="hero-intro anim-in" style="--d:.45s" data-setting="heroIntro"></p>
+          <div class="hero-actions anim-in" style="--d:.55s">
+            <a href="#services" class="btn btn-gold"><span data-i18n="hero.seeServices">See Services &amp; Prices</span> <svg class="icon"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-outline" data-call-link hidden><svg class="icon"><use href="#i-phone"/></svg> <span data-i18n="hero.callNow">Call Now</span></a>
+          </div>
+          <ul class="hero-stats anim-in" style="--d:.7s" data-hero-stats aria-label="Highlights"></ul>
+        </div>
+
+        <div class="hero-visual anim-in" style="--d:.3s">
+          <div class="arch arch-hero" data-image-slot="heroImage" data-image-eager></div>
+          <div class="arch-outline" aria-hidden="true"></div>
+          <div class="hero-card glass" data-hero-card hidden></div>
+        </div>
+      </div>
+      <a href="#services" class="scroll-cue" aria-label="Scroll to services"><span></span></a>
+    </section>
+
+    <!-- ============ Services & prices ============ -->
+    <section id="services" class="section services">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow eyebrow-center" data-i18n="services.eyebrow">Our Services</p>
+          <h2 class="section-title"><span data-i18n="services.title1">Services &amp;</span> <em data-i18n="services.title2">Prices</em></h2>
+          <svg class="flourish" aria-hidden="true"><use href="#i-flourish"/></svg>
+          <p class="section-intro" data-setting="servicesIntro"></p>
+        </header>
+        <div class="filter-bar" role="tablist" aria-label="Filter services by category" data-i18n-aria="services.filterAria" data-service-filters></div>
+        <div class="service-groups" data-services aria-live="polite"></div>
+        <p class="services-note" data-setting="pricelistNote"></p>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow eyebrow-center" data-i18n="contact.eyebrow">Contact</p>
+          <h2 class="section-title"><span data-i18n="contact.title1">Visit</span> <em data-i18n="contact.title2">Us</em></h2>
+          <svg class="flourish" aria-hidden="true"><use href="#i-flourish"/></svg>
+        </header>
+        <div class="contact-panel" data-reveal>
+          <div class="contact-primary">
+            <p class="contact-label"><svg class="icon"><use href="#i-phone"/></svg> <span data-i18n="contact.callUs">Call us</span></p>
+            <ul class="contact-phones" data-contact-phones></ul>
+            <div class="contact-actions">
+              <a class="btn btn-gold" data-whatsapp-link target="_blank" rel="noopener"><svg class="icon"><use href="#i-whatsapp"/></svg> <span data-i18n="contact.whatsappUs">WhatsApp Us</span></a>
+              <button type="button" class="btn btn-outline" data-open-booking data-i18n="cta.book">Book Appointment</button>
+            </div>
+            <div class="social-row social-row-left" data-social></div>
+          </div>
+          <dl class="contact-details">
+            <div class="contact-row">
+              <dt><svg class="icon"><use href="#i-whatsapp"/></svg> <span data-i18n="contact.whatsapp">WhatsApp</span></dt>
+              <dd data-contact-whatsapp></dd>
+            </div>
+            <div class="contact-row">
+              <dt><svg class="icon"><use href="#i-pin"/></svg> <span data-i18n="contact.address">Address</span></dt>
+              <dd data-contact-address></dd>
+            </div>
+            <div class="contact-row">
+              <dt><svg class="icon"><use href="#i-clock"/></svg> <span data-i18n="contact.hours">Opening hours</span></dt>
+              <dd data-contact-hours></dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-lg" href="#home" data-brand aria-label="Back to top"></a>
+        <p class="footer-tagline" data-setting="tagline"></p>
+        <div class="social-row social-row-left" data-social></div>
+      </div>
+      <nav class="footer-col" aria-label="Footer navigation">
+        <h4 data-i18n="footer.explore">Explore</h4>
+        <ul>
+          <li><a href="#home" data-i18n="nav.home">Home</a></li>
+          <li><a href="#services" data-i18n="nav.services">Services &amp; Prices</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h4 data-i18n="footer.services">Services</h4>
+        <ul data-footer-categories></ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.touch">Get in Touch</h4>
+        <ul data-footer-contact></ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p data-copyright></p>
+      <p class="footer-credit" data-photo-credit></p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-float" data-whatsapp-link target="_blank" rel="noopener" aria-label="Chat on WhatsApp" data-i18n-aria="wa.float" hidden>
+    <svg class="icon"><use href="#i-whatsapp"/></svg>
+  </a>
+
+  <!-- Mobile quick actions: always within thumb reach -->
+  <nav class="action-bar" aria-label="Quick contact" data-i18n-aria="action.aria" data-action-bar hidden>
+    <a class="action-btn action-btn--call" data-call-link><svg class="icon"><use href="#i-phone"/></svg><span data-i18n="action.call">Call</span></a>
+    <a class="action-btn action-btn--wa" data-whatsapp-link target="_blank" rel="noopener"><svg class="icon"><use href="#i-whatsapp"/></svg><span data-i18n="action.whatsapp">WhatsApp</span></a>
+    <button type="button" class="action-btn" data-open-booking><svg class="icon"><use href="#i-calendar"/></svg><span data-i18n="action.book">Book</span></button>
+  </nav>
+
+  <!-- ============ Appointment modal ============ -->
+  <dialog class="modal" data-booking-modal aria-labelledby="booking-title">
+    <div class="modal-inner">
+      <button type="button" class="modal-close" aria-label="Close" data-i18n-aria="modal.close" data-booking-close><svg class="icon"><use href="#i-close"/></svg></button>
+      <div class="modal-head">
+        <p class="eyebrow eyebrow-center" data-i18n="modal.eyebrow">Appointment Enquiry</p>
+        <h2 id="booking-title" class="modal-title"><span data-i18n="modal.title1">Book Your</span> <em data-i18n="modal.title2">Visit</em></h2>
+        <p class="modal-intro" data-setting="bookingIntro"></p>
+      </div>
+      <form class="booking-form" novalidate data-booking-form>
+        <div class="field">
+          <label for="bk-name"><span data-i18n="form.name">Your name</span> <span aria-hidden="true">*</span></label>
+          <input id="bk-name" name="name" type="text" autocomplete="name" required maxlength="80" placeholder="e.g. Lakshmi" data-i18n-placeholder="form.namePh">
+          <p class="field-error" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="bk-phone"><span data-i18n="form.phone">Phone number</span> <span aria-hidden="true">*</span></label>
+          <input id="bk-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="16" placeholder="10-digit mobile number" data-i18n-placeholder="form.phonePh">
+          <p class="field-error" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="bk-service"><span data-i18n="form.service">Service you want</span> <span aria-hidden="true">*</span></label>
+          <select id="bk-service" name="service" required data-booking-services>
+            <option value="">Select a service</option>
+          </select>
+          <p class="field-error" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="bk-date"><span data-i18n="form.date">Which day?</span> <span aria-hidden="true">*</span></label>
+          <input id="bk-date" name="date" type="date" required>
+          <p class="field-error" aria-live="polite"></p>
+        </div>
+        <div class="field field-full">
+          <label for="bk-message" data-i18n="form.message">Anything else? (optional)</label>
+          <textarea id="bk-message" name="message" rows="3" maxlength="500" placeholder="Preferred time, number of people, look you have in mind…" data-i18n-placeholder="form.messagePh"></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold btn-block field-full">
+          <svg class="icon"><use href="#i-whatsapp"/></svg> <span data-i18n="form.submit">Send on WhatsApp</span>
+        </button>
+        <p class="form-footnote field-full" data-i18n="form.footnote">WhatsApp will open with your details filled in. Just press send.</p>
+      </form>
+    </div>
+  </dialog>
+
+  <noscript><p class="noscript">Please enable JavaScript to view our services and prices.</p></noscript>
+</body>
+</html>

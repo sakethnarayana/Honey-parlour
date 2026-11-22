@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-11-21T18:02:40.766Z",
+  "parlourName": "Honey Beauty Parlour",
+  "tagline": "Beauty is our Passion",
+  "heroEyebrow": "Bridal · Makeup · Facial · Hair · Saree",
+  "heroIntro": "Bridal makeup, facials, hair styling, saree draping and more — all in one place. Call or WhatsApp us to book your visit.",
+  "heroImage": "https://images.pexels.com/photos/2531734/pexels-photo-2531734.jpeg?auto=compress&cs=tinysrgb&w=2400",
+  "heroImageSource": "Pexels (Pexels License – free for commercial use) – https://www.pexels.com/photo/2531734/",
+  "phones": [
+    {
+      "raw": "7993901988",
+      "display": "+91 79939 01988",
+      "tel": "+917993901988",
+      "international": "917993901988"
+    },
+    {
+      "raw": "9553022180",
+      "display": "+91 95530 22180",
+      "tel": "+919553022180",
+      "international": "919553022180"
+    }
+  ],
+  "whatsapp": {
+    "raw": "7993901988",
+    "display": "+91 79939 01988",
+    "tel": "+917993901988",
+    "international": "917993901988"
+  },
+  "whatsappMessage": "Hello Honey Beauty Parlour! I would like to know more about your services.",
+  "address": "Flat No. 302, 3rd Floor | Sai Teja Home | Kuntloor, Hayathnagar",
+  "mapUrl": "https://maps.app.goo.gl/fvehZ9iwDo1w3cBXA",
+  "openingHours": [
+    "9:00 AM – 9:00 PM"
+  ],
+  "servicesIntro": "All our services and prices in one place. Tap “Book” on any service and we will confirm your time on WhatsApp.",
+  "pricelistNote": "All prices are in Indian Rupees (₹). For bridal and function packages, please call or WhatsApp us.",
+  "bookingIntro": "Fill in your details. We will reply on WhatsApp to confirm your time.",
+  "social": {
+    "instagram": "https://www.instagram.com/",
+    "facebook": "https://www.facebook.com/"
+  },
+  "defaultLanguage": "en",
+  "te": {
+    "tagline": "అందమే మా అభిరుచి",
+    "heroEyebrow": "పెళ్లి మేకప్ · ఫేషియల్ · హెయిర్ · చీర కట్టు",
+    "heroIntro": "పెళ్లి కూతురు మేకప్, ఫేషియల్, హెయిర్ స్టైలింగ్, చీర కట్టు ఇంకా ఎన్నో — అన్నీ ఒకే చోట. బుక్ చేసుకోవడానికి కాల్ లేదా వాట్సాప్ చేయండి.",
+    "whatsappMessage": "నమస్కారం Honey Beauty Parlour! మీ సేవల గురించి తెలుసుకోవాలనుకుంటున్నాను.",
+    "address": "ఫ్లాట్ నం. 302, 3వ అంతస్తు | సాయి తేజ హోమ్ | కుంట్లూర్, హయత్‌నగర్",
+    "openingHours": [
+      "ఉదయం 9:00 నుంచి రాత్రి 9:00 వరకు"
+    ],
+    "servicesIntro": "మా సేవలు, ధరలు అన్నీ ఒకే చోట. ఏ సేవ మీదనైనా “బుక్” నొక్కండి — మీ సమయాన్ని వాట్సాప్‌లో కన్ఫర్మ్ చేస్తాం.",
+    "pricelistNote": "అన్ని ధరలు రూపాయల్లో (₹). పెళ్లి, ఫంక్షన్ ప్యాకేజీల కోసం కాల్ లేదా వాట్సాప్ చేయండి.",
+    "bookingIntro": "మీ వివరాలు ఇవ్వండి. మీ సమయాన్ని వాట్సాప్‌లో కన్ఫర్మ్ చేస్తాం."
+  }
+}

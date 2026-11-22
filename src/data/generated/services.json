@@ -1,0 +1,265 @@
+{
+  "generatedAt": "2026-11-21T18:02:40.766Z",
+  "categories": [
+    "Bridal Makeup",
+    "Makeup",
+    "Saree Draping",
+    "Hair Styling",
+    "Facial & Skincare",
+    "Hands & Feet",
+    "Other Services"
+  ],
+  "categoryLabels": {
+    "Bridal Makeup": {
+      "en": "Bridal Makeup",
+      "te": "పెళ్లి కూతురు మేకప్"
+    },
+    "Makeup": {
+      "en": "Makeup",
+      "te": "మేకప్"
+    },
+    "Saree Draping": {
+      "en": "Saree Draping",
+      "te": "చీర కట్టు"
+    },
+    "Hair Styling": {
+      "en": "Hair Styling",
+      "te": "హెయిర్ స్టైలింగ్"
+    },
+    "Facial & Skincare": {
+      "en": "Facial & Skincare",
+      "te": "ఫేషియల్ & చర్మ సంరక్షణ"
+    },
+    "Hands & Feet": {
+      "en": "Hands & Feet",
+      "te": "చేతులు & కాళ్లు"
+    },
+    "Other Services": {
+      "en": "Other Services",
+      "te": "ఇతర సేవలు"
+    }
+  },
+  "services": [
+    {
+      "id": "SRV-001",
+      "name": "Bridal Makeup",
+      "nameTe": "పెళ్లి కూతురు మేకప్",
+      "category": "Bridal Makeup",
+      "description": "Our signature bridal look — flawless, long-wearing makeup designed to keep you radiant from the first ritual to the last photograph.",
+      "descriptionTe": "మీ పెళ్లి రోజు కోసం ప్రత్యేక మేకప్ — మొదటి కార్యక్రమం నుంచి చివరి ఫోటో వరకు అందంగా, ఎక్కువసేపు నిలిచేలా.",
+      "price": 8000,
+      "image": "https://images.pexels.com/photos/2531734/pexels-photo-2531734.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "imageSource": "Pexels (Pexels License – free for commercial use) – https://www.pexels.com/photo/2531734/",
+      "imagePosition": "center 20%",
+      "featured": true
+    },
+    {
+      "id": "SRV-002",
+      "name": "Engagement Makeup",
+      "nameTe": "నిశ్చితార్థం మేకప్",
+      "category": "Makeup",
+      "description": "A radiant, camera-ready look for your engagement ceremony — soft glam that glows in photographs and lasts through the celebrations.",
+      "descriptionTe": "నిశ్చితార్థం వేడుక కోసం మెరిసే మేకప్ — ఫోటోల్లో అందంగా కనిపించేలా, వేడుక అంతా నిలిచేలా.",
+      "price": 6000,
+      "image": "https://images.unsplash.com/photo-1610173826608-bd1f53a52db1?auto=format&fit=crop&w=1600&q=80",
+      "imageSource": "Unsplash (Unsplash License – free for commercial use)",
+      "imagePosition": "center 30%",
+      "featured": true
+    },
+    {
+      "id": "SRV-003",
+      "name": "Normal Makeup",
+      "nameTe": "సాధారణ మేకప్",
+      "category": "Makeup",
+      "description": "Elegant party and occasion makeup tailored to your features, outfit and event — from subtle glow to evening glamour.",
+      "descriptionTe": "పార్టీలు, ఫంక్షన్ల కోసం మీ ముఖానికి, దుస్తులకు తగ్గట్టు అందమైన మేకప్ — సింపుల్ నుంచి గ్రాండ్ వరకు.",
+      "price": 3000,
+      "image": "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1600&q=80",
+      "imageSource": "Unsplash (Unsplash License – free for commercial use)",
+      "imagePosition": "center 35%",
+      "featured": true
+    },
+    {
+      "id": "SRV-004",
+      "name": "Saree Function",
+      "nameTe": "చీర ఫంక్షన్",
+      "category": "Saree Draping",
+      "description": "A complete, graceful look for your saree function, styled with care for this special family celebration.",
+      "descriptionTe": "మీ చీర ఫంక్షన్ కోసం పూర్తి అలంకరణ — ఈ ప్రత్యేక కుటుంబ వేడుక కోసం ఎంతో శ్రద్ధగా.",
+      "price": 5000,
+      "image": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1600&q=80",
+      "imageSource": "Unsplash (Unsplash License – free for commercial use)",
+      "imagePosition": "center 25%",
+      "featured": true
+    },
+    {
+      "id": "SRV-005",
+      "name": "Saree Draping",
+      "nameTe": "చీర కట్టడం",
+      "category": "Saree Draping",
+      "description": "Neat, secure and elegant saree draping in your preferred style, perfectly pinned to stay in place all day.",
+      "descriptionTe": "మీకు నచ్చిన స్టైల్‌లో చక్కగా, రోజంతా జారకుండా పిన్ చేసి చీర కడతాం.",
+      "price": 500,
+      "image": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1600&q=80",
+      "imageSource": "Unsplash (Unsplash License – free for commercial use)",
+      "imagePosition": "center 40%",
+      "featured": false
+    },
+    {
+      "id": "SRV-006",
+      "name": "Saree Pre-Pleating",
+      "nameTe": "చీర కుచ్చిళ్లు (ప్రీ-ప్లీటింగ్)",
+      "category": "Saree Draping",
+      "description": "Crisp, evenly set pleats prepared in advance so your saree drapes in minutes — ideal for weddings and functions.",
+      "descriptionTe": "చీర కుచ్చిళ్లు ముందుగానే సెట్ చేస్తాం — పెళ్లిళ్లు, ఫంక్షన్లలో నిమిషాల్లో చీర కట్టుకోవచ్చు.",
+      "price": 350,
+      "image": "https://images.pexels.com/photos/1162983/pexels-photo-1162983.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "imageSource": "Pexels (Pexels License – free for commercial use) – https://www.pexels.com/photo/1162983/",
+      "imagePosition": "center 30%",
+      "featured": false
+    },
+    {
+      "id": "SRV-007",
+      "name": "Messy Hairstyle",
+      "nameTe": "మెస్సీ హెయిర్‌స్టైల్",
+      "category": "Hair Styling",
+      "description": "Effortlessly romantic textured buns, braids and loose waves — a modern, soft finish for receptions and parties.",
+      "descriptionTe": "రిసెప్షన్లు, పార్టీల కోసం అందమైన బన్, జడలు, వదులుగా ఉండే వేవ్స్.",
+      "price": 1000,
+      "image": "https://images.unsplash.com/photo-1626954079979-ec4f7b05e032?auto=format&fit=crop&w=1600&q=80",
+      "imageSource": "Unsplash (Unsplash License – free for commercial use)",
+      "imagePosition": "center 40%",
+      "featured": false
+    },
+    {
+      "id": "SRV-008",
+      "name": "Basic Hairstyle",
+      "nameTe": "సాధారణ హెయిర్‌స్టైల్",
+      "category": "Hair Styling",
+      "description": "Polished everyday or occasion styling — smooth blow-outs, soft curls or a classic bun.",
+      "descriptionTe": "రోజువారీ లేదా ఫంక్షన్ల కోసం చక్కని హెయిర్‌స్టైల్ — బ్లో-డ్రై, కర్ల్స్ లేదా సింపుల్ బన్.",
+      "price": 500,
+      "image": "https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "imageSource": "Pexels (Pexels License – free for commercial use) – https://www.pexels.com/photo/3065209/",
+      "imagePosition": "center 30%",
+      "featured": false
+    },
+    {
+      "id": "SRV-009",
+      "name": "Basic Hair Cut",
+      "nameTe": "సాధారణ హెయిర్ కట్",
+      "category": "Hair Styling",
+      "description": "A precise, flattering cut shaped to suit your face, hair texture and lifestyle.",
+      "descriptionTe": "మీ ముఖానికి, జుట్టుకు తగ్గట్టు చక్కని హెయిర్ కట్.",
+      "price": 200,
+      "image": "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1600&q=80",
+      "imageSource": "Unsplash (Unsplash License – free for commercial use)",
+      "imagePosition": "center 30%",
+      "featured": false
+    },
+    {
+      "id": "SRV-010",
+      "name": "Bridal Facial",
+      "nameTe": "పెళ్లి కూతురు ఫేషియల్",
+      "category": "Facial & Skincare",
+      "description": "A deeply nourishing pre-bridal facial that cleanses, brightens and preps your skin for a luminous makeup base.",
+      "descriptionTe": "పెళ్లికి ముందు చర్మాన్ని శుభ్రం చేసి, మెరిసేలా చేసే ఫేషియల్ — మేకప్ చక్కగా కుదురుతుంది.",
+      "price": 1500,
+      "image": "https://images.pexels.com/photos/3985329/pexels-photo-3985329.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "imageSource": "Pexels (Pexels License – free for commercial use) – https://www.pexels.com/photo/3985329/",
+      "imagePosition": "center 40%",
+      "featured": true
+    },
+    {
+      "id": "SRV-011",
+      "name": "D-Tan + Fruit Facial",
+      "nameTe": "డీ-టాన్ + ఫ్రూట్ ఫేషియల్",
+      "category": "Facial & Skincare",
+      "description": "De-tan treatment followed by a refreshing fruit facial to remove dullness and restore a fresh, even glow.",
+      "descriptionTe": "ఎండ వల్ల వచ్చిన నలుపు (టాన్) తగ్గించి, ఫ్రూట్ ఫేషియల్‌తో ముఖానికి తాజా మెరుపు.",
+      "price": 500,
+      "image": "https://images.unsplash.com/photo-1505944270255-72b8c68c6a70?auto=format&fit=crop&w=1600&q=80",
+      "imageSource": "Unsplash (Unsplash License – free for commercial use)",
+      "imagePosition": "center 40%",
+      "featured": false
+    },
+    {
+      "id": "SRV-012",
+      "name": "Pedicure",
+      "nameTe": "పెడిక్యూర్",
+      "category": "Hands & Feet",
+      "description": "A relaxing foot-care ritual for soft, beautifully groomed feet.",
+      "descriptionTe": "కాళ్లకు హాయినిచ్చే సంరక్షణ — మృదువైన, అందమైన పాదాల కోసం.",
+      "price": 500,
+      "image": "https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&w=1600&q=80",
+      "imageSource": "Unsplash (Unsplash License – free for commercial use)",
+      "imagePosition": "center",
+      "featured": false
+    },
+    {
+      "id": "SRV-013",
+      "name": "Manicure",
+      "nameTe": "మేనిక్యూర్",
+      "category": "Hands & Feet",
+      "description": "Nail and cuticle care for elegant, well-groomed hands.",
+      "descriptionTe": "గోళ్లు, చేతుల సంరక్షణ — అందమైన చేతుల కోసం.",
+      "price": 350,
+      "image": "https://images.pexels.com/photos/3997391/pexels-photo-3997391.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "imageSource": "Pexels (Pexels License – free for commercial use) – https://www.pexels.com/photo/3997391/",
+      "imagePosition": "center",
+      "featured": false
+    },
+    {
+      "id": "SRV-014",
+      "name": "Wax Hands",
+      "nameTe": "చేతులకు వ్యాక్సింగ్",
+      "category": "Hands & Feet",
+      "description": "Gentle hand waxing for smooth, soft skin.",
+      "descriptionTe": "చేతులకు సున్నితమైన వ్యాక్సింగ్ — మృదువైన చర్మం కోసం.",
+      "price": 250,
+      "image": "https://images.pexels.com/photos/3762875/pexels-photo-3762875.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "imageSource": "Pexels (Pexels License – free for commercial use) – https://www.pexels.com/photo/3762875/",
+      "imagePosition": "center",
+      "featured": false
+    },
+    {
+      "id": "SRV-015",
+      "name": "Henna Colour",
+      "nameTe": "హెన్నా కలర్",
+      "category": "Other Services",
+      "description": "Natural henna colour application for a rich, traditional finish.",
+      "descriptionTe": "సహజమైన హెన్నా రంగు — సంప్రదాయ అందం.",
+      "price": 250,
+      "image": "https://images.pexels.com/photos/1456613/pexels-photo-1456613.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "imageSource": "Pexels (Pexels License – free for commercial use) – https://www.pexels.com/photo/1456613/",
+      "imagePosition": "center",
+      "featured": false
+    },
+    {
+      "id": "SRV-016",
+      "name": "Hair Massage",
+      "nameTe": "తల మసాజ్",
+      "category": "Other Services",
+      "description": "A soothing scalp and hair massage that relieves stress and nourishes the roots.",
+      "descriptionTe": "తలకు, జుట్టుకు హాయినిచ్చే మసాజ్ — ఒత్తిడి తగ్గి, జుట్టు కుదుళ్లకు పోషణ.",
+      "price": 200,
+      "image": "https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "imageSource": "Pexels (Pexels License – free for commercial use) – https://www.pexels.com/photo/3993449/",
+      "imagePosition": "center",
+      "featured": false
+    },
+    {
+      "id": "SRV-017",
+      "name": "Eyebrows",
+      "nameTe": "కనుబొమ్మలు (ఐబ్రో)",
+      "category": "Other Services",
+      "description": "Precise eyebrow shaping that frames your eyes and defines your features.",
+      "descriptionTe": "మీ కళ్లకు అందాన్నిచ్చేలా కనుబొమ్మలకు చక్కని ఆకారం.",
+      "price": 50,
+      "image": "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=1600&q=80",
+      "imageSource": "Unsplash (Unsplash License – free for commercial use)",
+      "imagePosition": "center 40%",
+      "featured": false
+    }
+  ]
+}

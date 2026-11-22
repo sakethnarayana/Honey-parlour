@@ -1,0 +1,77 @@
+/* ==========================================================================
+   Design tokens — Honey Beauty Parlour
+   ========================================================================== */
+:root {
+  /* Core palette */
+  --ink: #0e0709;
+  --ink-2: #140a0d;
+  --burgundy-950: #1a0a10;
+  --burgundy-900: #220d16;
+  --burgundy-800: #2e111e;
+  --burgundy-700: #44182c;
+  --burgundy-600: #5c2140;
+
+  --rose: #e7a3b6;
+  --rose-soft: #f2c9d4;
+  --rose-deep: #c46d8b;
+
+  --gold: #c9a45c;
+  --gold-light: #ead49a;
+  --gold-pale: #f5e6bd;
+  --gold-dark: #8a6a2f;
+
+  --ivory: #f7f0e6;
+  --ivory-2: #efe4d4;
+  --text: rgba(247, 240, 230, 0.92);
+  --text-muted: rgba(247, 240, 230, 0.78);
+  --text-faint: rgba(247, 240, 230, 0.58);
+
+  --line: rgba(201, 164, 92, 0.22);
+  --line-strong: rgba(201, 164, 92, 0.45);
+  --surface: rgba(255, 255, 255, 0.035);
+  --surface-2: rgba(255, 255, 255, 0.06);
+
+  /* Gradients */
+  --grad-gold: linear-gradient(135deg, #f5e3a8 0%, #d8b66e 38%, #b58b43 70%, #e9cf8e 100%);
+  --grad-gold-text: linear-gradient(120deg, #f7e7b4 0%, #d4b06a 45%, #f0d895 70%, #b8914a 100%);
+  --grad-rose-gold: linear-gradient(120deg, var(--rose-soft), var(--gold-light));
+  --grad-burgundy: radial-gradient(120% 90% at 85% 0%, #4a1a30 0%, var(--burgundy-900) 45%, var(--burgundy-950) 100%);
+  --grad-ink: linear-gradient(180deg, var(--ink) 0%, var(--ink-2) 100%);
+
+  /* Typography */
+  /* Telugu fonts follow the Latin ones: each script picks its own font per character */
+  --font-serif: 'Cormorant Garamond', 'Cormorant', 'Tiro Telugu', Garamond, 'Times New Roman', serif;
+  --font-sans: 'Jost', 'Noto Sans Telugu', 'Helvetica Neue', Arial, sans-serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --fs-xl: clamp(1.6rem, 1.3rem + 1.2vw, 2.2rem);
+  --fs-2xl: clamp(2.2rem, 1.6rem + 2.6vw, 3.6rem);
+  --fs-hero: clamp(3.2rem, 1.8rem + 6.2vw, 7.2rem);
+
+  --tracking-wide: 0.22em;
+
+  /* Spacing & layout */
+  --container: 1240px;
+  --gutter: clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
+  --section-y: clamp(5rem, 3.5rem + 6vw, 9rem);
+  --header-h: 84px;
+
+  --radius-sm: 4px;
+  --radius: 10px;
+  --radius-lg: 18px;
+  --radius-arch: 999px 999px 14px 14px;
+
+  /* Effects */
+  --shadow-soft: 0 18px 50px -20px rgba(0, 0, 0, 0.7);
+  --shadow-card: 0 30px 60px -30px rgba(0, 0, 0, 0.85);
+  --shadow-gold: 0 10px 40px -12px rgba(201, 164, 92, 0.45);
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --t-fast: 0.2s;
+  --t: 0.45s;
+  --t-slow: 0.9s;
+}

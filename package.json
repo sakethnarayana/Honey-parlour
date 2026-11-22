@@ -1,0 +1,20 @@
+{
+  "name": "honey-beauty-parlour",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Honey Beauty Parlour – premium static website driven by an Excel workbook.",
+  "scripts": {
+    "data": "node scripts/generate-data.js",
+    "data:fast": "node scripts/generate-data.js --skip-image-check",
+    "build": "node scripts/build.js",
+    "dev": "node scripts/generate-data.js --skip-image-check && node scripts/serve.js .",
+    "preview": "node scripts/serve.js dist",
+    "seed-workbook": "node scripts/create-workbook.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  }
+}

@@ -1,0 +1,229 @@
+/* ==========================================================================
+   Responsive
+   Phones are the primary device for this audience, so the ≤ 760px layout is
+   deliberately simple: big readable text, a compact rate card and one-tap
+   Call / WhatsApp actions.
+   ========================================================================== */
+
+/* ---------- ≤ 1100px : laptop / small desktop ---------- */
+@media (max-width: 1100px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .hero-card { left: -8%; }
+  .contact-row { grid-template-columns: 1fr; gap: 0.6rem; }
+}
+
+/* ---------- ≤ 960px : tablet — mobile navigation ---------- */
+@media (max-width: 960px) {
+  :root { --header-h: 72px; }
+
+  .nav-toggle { display: block; z-index: 2; }
+  .lang-toggle { position: relative; z-index: 2; } /* stays usable above the open menu */
+  .header-cta { display: none; }
+  .site-header .brand { position: relative; z-index: 2; } /* stays visible above the open menu */
+
+  .site-nav {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: calc(var(--header-h) + 2rem) var(--gutter) max(2rem, env(safe-area-inset-bottom));
+    background:
+      radial-gradient(80% 50% at 100% 0%, rgba(196, 109, 139, 0.18), transparent 70%),
+      var(--burgundy-950);
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-12px);
+    transition: opacity var(--t) var(--ease), transform var(--t) var(--ease-out), visibility 0s linear var(--t);
+  }
+  .site-nav.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: opacity var(--t) var(--ease), transform var(--t) var(--ease-out), visibility 0s;
+  }
+  .nav-list { flex-direction: column; align-items: flex-start; gap: 0; }
+  .nav-list li { width: 100%; border-bottom: 1px solid var(--line); }
+  .nav-link {
+    display: block;
+    padding: 1rem 0;
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--ivory);
+  }
+  .nav-link::after { left: auto; right: 0; bottom: 50%; transform: translateY(50%) rotate(45deg) scale(0); }
+  .nav-link.is-active { color: var(--gold-light); }
+  .nav-link.is-active::after { transform: translateY(50%) rotate(45deg) scale(1); }
+  .site-nav.is-open .nav-list li { animation: card-in 0.6s var(--ease-out) both; }
+  .site-nav.is-open .nav-list li:nth-child(2) { animation-delay: 0.05s; }
+  .site-nav.is-open .nav-list li:nth-child(3) { animation-delay: 0.1s; }
+
+  .nav-mobile-extra { display: flex; flex-direction: column; gap: 1.25rem; }
+  .nav-mobile-contact { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; font-size: 1.05rem; color: var(--text); }
+  .nav-mobile-contact a { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 48px; }
+  .nav-mobile-contact .icon { color: var(--gold); }
+
+  /* Hero stacks */
+  .hero { padding-top: calc(var(--header-h) + 2.5rem); }
+  .hero-grid { grid-template-columns: 1fr; text-align: center; }
+  .hero-content { display: flex; flex-direction: column; align-items: center; }
+  .hero-tagline { justify-content: center; }
+  .hero-eyebrow .eyebrow-line { display: none; }
+  .hero-eyebrow { justify-content: center; text-align: center; letter-spacing: 0.14em; }
+  .hero-intro { margin-inline: auto; }
+  .hero-actions { justify-content: center; }
+  .hero-stats { width: 100%; max-width: 24rem; margin-inline: auto; flex-wrap: nowrap; text-align: center; }
+  .hero-stats li { flex: 1 1 0; padding-inline: 0.75rem; }
+  .hero-visual { width: min(100%, 420px); margin-top: 1rem; }
+  .hero-card { left: 50%; bottom: -1.5rem; transform: translateX(-50%); text-align: left; width: max-content; max-width: 92%; }
+  .hero-card:hover { transform: translateX(-50%) translateY(-3px); }
+  .scroll-cue { display: none; }
+
+  .contact-panel { grid-template-columns: 1fr; }
+  .contact-primary { padding-right: 0; border-right: 0; border-bottom: 1px solid var(--line); }
+  .contact-row { grid-template-columns: 11rem 1fr; padding-left: 0; }
+}
+
+/* ---------- ≤ 760px : phones ---------- */
+@media (max-width: 760px) {
+  :root { --section-y: 3.5rem; }
+  body { font-size: 1.0625rem; padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
+
+  /* Plain, readable labels instead of small spaced-out capitals */
+  .btn { min-height: 54px; font-size: 1rem; letter-spacing: 0.02em; text-transform: none; }
+  .eyebrow { font-size: 0.8rem; letter-spacing: 0.14em; }
+  .section-head { margin-bottom: 1.75rem; }
+  .section-intro { font-size: 1.05rem; margin-top: 1rem; }
+  .flourish { margin-top: 0.75rem; }
+
+  /* Hero: the photo becomes a soft backdrop so the page starts short */
+  .hero { min-height: 0; padding: calc(var(--header-h) + 2.25rem) 0 2.75rem; }
+  .hero-visual { position: absolute; inset: 0; z-index: -1; width: auto; margin: 0; }
+  .arch-hero { height: 100%; aspect-ratio: auto; border-radius: 0; box-shadow: none; }
+  .arch-hero img { object-position: center 15%; }
+  .arch-hero::after { background: linear-gradient(180deg, rgba(26, 10, 16, 0.74) 0%, rgba(26, 10, 16, 0.86) 50%, var(--burgundy-950) 100%); }
+  .arch-outline, .hero-card, .hero-floral { display: none; }
+  .hero-tagline { margin: 1.1rem 0 1rem; }
+  .hero-intro { font-size: 1.1rem; color: var(--text); }
+  .hero-actions { margin-top: 1.75rem; }
+  .hero-stats { margin-top: 2rem; padding-top: 1.25rem; }
+  .stat-label { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: none; }
+
+  /* Services become a compact rate card: photo · name · price · Book */
+  .filter-bar { display: none; }
+  .service-group + .service-group { margin-top: 2.25rem; }
+  .service-group-head { margin-bottom: 0.25rem; }
+  .service-group-title { font-size: 1.7rem; white-space: normal; color: var(--gold-light); }
+  .service-group-count { display: none; }
+  .service-grid,
+  .service-grid--1,
+  .service-grid--2 { grid-template-columns: 1fr; gap: 0; }
+
+  .service-card,
+  .service-grid--1 .service-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    height: auto;
+    padding: 1rem 0;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    border-radius: 0;
+    background: none;
+    overflow: visible;
+  }
+  .service-card:last-child { border-bottom: 0; }
+  .service-card:hover { transform: none; box-shadow: none; }
+  .service-card.is-featured { background: none; border-color: var(--line); }
+  .service-card.is-featured::before,
+  .service-card .badge,
+  .service-cat,
+  .service-desc,
+  .price small,
+  .book-btn .icon { display: none; }
+
+  .service-card .img-frame,
+  .service-grid--1 .img-frame,
+  .service-grid--2 .img-frame {
+    flex: 0 0 76px;
+    width: 76px;
+    height: 76px;
+    aspect-ratio: 1;
+    border-radius: 14px;
+    border: 1px solid var(--line);
+  }
+  .service-card .img-frame::after { display: none; }
+  .service-grid--1 .img-frame img { position: static; }
+  .service-card:hover .img-frame img { transform: none; }
+
+  .service-body,
+  .service-grid--1 .service-body { flex: 1; min-width: 0; padding: 0; justify-content: center; }
+  .service-popular { display: block; }
+  .service-name,
+  .service-grid--1 .service-name { margin: 0 0 0.35rem; font-size: 1.35rem; line-height: 1.2; }
+  .service-foot { gap: 0.75rem; padding: 0; border: 0; }
+  .price,
+  .service-grid--1 .price { font-size: 1.45rem; }
+  .book-btn {
+    min-height: 44px;
+    padding: 0.5rem 1.15rem;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    color: var(--gold-light);
+  }
+  .book-btn:hover, .book-btn:active { gap: 0.45rem; color: #1d0d12; background: var(--grad-gold); border-color: transparent; }
+  .services-note { margin-top: 2rem; }
+
+  /* Contact */
+  .contact-row { grid-template-columns: 1fr; gap: 0.5rem; }
+  .contact-row dt, .contact-label { font-size: 0.85rem; letter-spacing: 0.1em; }
+  .contact-actions .btn { flex: 1 1 100%; }
+
+  /* Booking form */
+  .booking-form { grid-template-columns: 1fr; }
+  .field label { font-size: 0.95rem; letter-spacing: 0.02em; text-transform: none; }
+  .modal-head { padding-top: 2.25rem; margin-bottom: 1.5rem; }
+  .modal-close { top: 0.9rem; right: 0.9rem; }
+
+  /* Footer: contact details are right above it, so keep only the brand */
+  .site-footer { padding: 2.5rem 0 1.5rem; text-align: center; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-col, .footer-brand .social-row { display: none; }
+  .footer-tagline { margin: 0.75rem 0 0; }
+  .footer-bottom { flex-direction: column; align-items: center; margin-top: 1.5rem; padding-top: 1.25rem; }
+
+  /* The quick-action bar replaces the floating WhatsApp button */
+  .wa-float { display: none; }
+  .action-bar:not([hidden]) { display: grid; }
+}
+
+/* ---------- ≤ 560px : small phones ---------- */
+@media (max-width: 560px) {
+  .brand-mark { width: 40px; height: 40px; font-size: 1.35rem; }
+  .brand-name { font-size: 1.35rem; }
+  .brand-sub { font-size: 0.6rem; letter-spacing: 0.24em; }
+
+  .hero-actions { flex-direction: column; width: 100%; }
+  .hero-actions .btn { width: 100%; }
+}
+
+@media (max-width: 359px) {
+  .header-actions { gap: 0.5rem; }
+  .lang-toggle { min-width: 0; padding-inline: 0.75rem; }
+  .brand-sub { display: none; } /* make room for the language button on small phones */
+  .brand-name { font-size: 1.5rem; }
+}
+
+@media (max-width: 380px) {
+  .btn { padding-inline: 1.1rem; }
+  .service-card .img-frame { flex-basis: 64px; width: 64px; height: 64px; }
+  .service-name { font-size: 1.25rem; }
+}
